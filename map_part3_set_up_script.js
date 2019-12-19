@@ -3,12 +3,18 @@ var view;
 var map;
 var cd;
 var mx;
-var sp;
-var it;
-var gr;
-var uk;
-var ch;
-var jp;
+var cr;
+var ar;
+var br;
+var cu;
+var bo;
+var cl;
+var ht;
+var nc;
+var pn;
+var es;
+var hn;
+var vn;
 
 
 function init() {
@@ -16,12 +22,19 @@ function init() {
 	ourLoc = ol.proj.fromLonLat([276.6298, 41.8781]);
   cd = ol.proj.fromLonLat([250.6298, 55.5017]);
   mx = ol.proj.fromLonLat([260.5528, 23.6345]);
-  sp = ol.proj.fromLonLat([3.7492, 40.4637]);
-  it = ol.proj.fromLonLat([12.4964, 41.9028]);
-  gr = ol.proj.fromLonLat([24.8093, 35.2401]);
-  uk = ol.proj.fromLonLat([0.1278, 51.5074]);
-  ch = ol.proj.fromLonLat([121.4737, 31.2304]);
-  jp = ol.proj.fromLonLat([139.6503, 35.6762]);
+  cr = ol.proj.fromLonLat([275.6298, 9.7489]);
+  ar = ol.proj.fromLonLat([299, -32.603722]);
+  br = ol.proj.fromLonLat([310, -16]);
+  cu = ol.proj.fromLonLat([280.6298, 19.7489]);
+  bo = ol.proj.fromLonLat([295, -18]);
+  cl = ol.proj.fromLonLat([285,3]);
+  ht = ol.proj.fromLonLat([288.6298, 18.7489]);
+  nc = ol.proj.fromLonLat([275.6298, 12.7489]);
+  pn = ol.proj.fromLonLat([280.6298, 9.7489]);
+  es = ol.proj.fromLonLat([273, 13]);
+  hn = ol.proj.fromLonLat([275.6298, 15.7489]);
+  vn = ol.proj.fromLonLat([298,5]);
+
 
 	view = new ol.View({
 		center: ourLoc,
@@ -62,34 +75,33 @@ function mexico(){
   });
 }
 
-function spain(){
+function costarica(){
   view.animate({
-		center: sp, // "Home" Location
+		center: cr, // "Home" Location
 		duration: 2000  // Two seconds
   });
 }
 
-function italy(){
+function argentina(){
   view.animate({
-		center: it, // "Home" Location
+		center: ar, // "Home" Location
 		duration: 2000  // Two seconds
 	});
 }
 
-function crete(){
+function brazil(){
   view.animate({
-		center: gr, // "Home" Location
+		center: br, // "Home" Location
 		duration: 2000  // Two seconds
 	});
 }
 
-function unitedk(){
+function cuba(){
   view.animate({
-		center: uk, // "Home" Location
+		center: cu, // "Home" Location
 		duration: 2000  // Two seconds
 	});
 }
-
 function china(){
   view.animate({
 		center: ch, // "Home" Location
@@ -97,9 +109,58 @@ function china(){
   });
 }
 
-function japan(){
+function bolivia(){
   view.animate({
-		center: jp, // "Home" Location
+		center: bo, // "Home" Location
+		duration: 2000  // Two seconds
+	});
+}
+
+function colombia(){
+  view.animate({
+		center: cl, // "Home" Location
+		duration: 2000  // Two seconds
+	});
+}
+
+function haiti(){
+  view.animate({
+		center: ht, // "Home" Location
+		duration: 2000  // Two seconds
+	});
+}
+
+function nicaragua(){
+  view.animate({
+		center: nc, // "Home" Location
+		duration: 2000  // Two seconds
+	});
+}
+
+function panama(){
+  view.animate({
+		center: pn, // "Home" Location
+		duration: 2000  // Two seconds
+	});
+}
+
+function elsalvador(){
+  view.animate({
+		center: es, // "Home" Location
+		duration: 2000  // Two seconds
+	});
+}
+
+function honduras(){
+  view.animate({
+		center: hn, // "Home" Location
+		duration: 2000  // Two seconds
+	});
+}
+
+function venezuala(){
+  view.animate({
+		center: vn, // "Home" Location
 		duration: 2000  // Two seconds
 	});
 }
